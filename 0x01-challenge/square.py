@@ -20,6 +20,7 @@ class Square:
         return (self.width * 2) + (self.height * 2)
 
     def __str__(self):
+        ''' documentation '''
         return "{}/{}".format(self.width, self.height)
 
 
