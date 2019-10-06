@@ -1,0 +1,2 @@
+      invoke  active_record
+      create    db/migrate/20191006051442_add_online_to_posts.rb
