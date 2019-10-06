@@ -4,14 +4,16 @@ documentation
 """
 
 
-class Square():
+class Square:
     ''' Square class '''
 
-    def __init__(self, width=0, height=0):
+    width = 0
+    height = 0
+
+    def __init__(self, width, height):
         ''' initializer for attributes '''
-        if width == height:
-            self.width = width
-            self.height = height
+        self.width = width
+        self.height = height
 
     def __wh_validator(self, name, value):
         ''' comments '''
