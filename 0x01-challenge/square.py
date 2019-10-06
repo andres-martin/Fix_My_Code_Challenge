@@ -3,7 +3,7 @@
 
 
 class Square:
-    ''' documentation '''
+    ''' Square class '''
 
     def __init__(self, *args, **kwargs):
         ''' initializer for attributes '''
@@ -16,12 +16,12 @@ class Square:
         """ Area of the square """
         return self.width * self.height
 
-    def perimeter_of_square(self):
+    def perimeter_of_my_square(self):
         ''' Perimeter of Square '''
         return (self.width * 2) + (self.height * 2)
 
     def __str__(self):
-        ''' documentation '''
+        ''' str representation of instance '''
         return "{}/{}".format(self.width, self.height)
 
 
@@ -29,4 +29,4 @@ if __name__ == "__main__":
     s = Square(width=12, height=9)
     print(s)
     print(s.area_of_my_square())
-    print(s.perimeter_of_square())
+    print(s.perimeter_of_my_square())
