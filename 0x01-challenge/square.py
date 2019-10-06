@@ -4,10 +4,11 @@
 
 class Square:
     ''' documentation '''
-    width = 0
-    height = 0
 
     def __init__(self, *args, **kwargs):
+        ''' initializer for attributes '''
+        self.width = 0
+        self.height = 0
         for key, value in kwargs.items():
             setattr(self, key, value)
 
@@ -25,7 +26,6 @@ class Square:
 
 
 if __name__ == "__main__":
-
     s = Square(width=12, height=9)
     print(s)
     print(s.area_of_my_square())
