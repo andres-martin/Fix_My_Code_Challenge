@@ -1,6 +1,11 @@
 <% @posts.each do |post| %>
 <div class="post_wrapper">
-  <h2 class="title"><%= link_to post.title, post %></h2>
-  <p class="date"><%= post.created_at.strftime("%B, %d, %Y") %></p>
+  <% if user_signed_in? %>
+    <h2 class="title"><%= link_to post.title, post %></h2>
+    <p class="date"><%= post.created_at.strftime("%B, %d, %Y") %></p>
+  <% elsif post.online %>
+    <h2 class="title"><%= link_to post.title, post %></h2>
+    <p class="date"><%= post.created_at.strftime("%B, %d, %Y") %></p>
+  <% end %>
 </div>
 <% end %>
